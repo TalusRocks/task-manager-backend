@@ -27,7 +27,6 @@ function createTask(body){
     const task = body
     const newTask = { id, ...task }
     tasks.push(newTask)
-    // tasks.push(task)
     const result = JSON.stringify(tasks)
     fs.writeFileSync('./db/tasks.json', result, 'utf-8')
     response = newTask
