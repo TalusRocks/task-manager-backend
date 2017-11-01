@@ -25,7 +25,7 @@ function createTask(body){
   } else {
     const id = uuid()
     const task = body
-    // console.log(task.task);
+    console.log(task.task);
     const newTask = { id, task: task.task }
     tasks.push(newTask)
     const result = JSON.stringify(tasks)
